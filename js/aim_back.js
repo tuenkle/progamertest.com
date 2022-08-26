@@ -3,7 +3,7 @@ import {
     timeToString,
     hitandshotToString,
     redirectToAim,
-    redirectToCps
+    redirectToCps, setCookie
 } from "./tools.js";
 
 export class AimCore {
@@ -138,6 +138,7 @@ export class AimCore {
                 clearInterval(this.timerID
 
                 );
+                this.backend.setCookieInFinish(this.backend.getTime());
                 this.canvas.drawEndGameCSS(this.backend.getTime(), this.backend.getHit(), this.backend.getShot());
                 // todo: 끝난 직후 배경 지우고 게임 오버 띄우고 1초뒤에 메인화면으로 넘어가기
             }
@@ -348,5 +349,8 @@ export class AimBackend {
     }
     deleteTarget(targetId) {
         delete this.targets[targetId];
+    }
+    setCookieInFinish(aimResult){
+        setCookie("aimResult", aimResult);
     }
 }

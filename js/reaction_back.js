@@ -1,3 +1,5 @@
+import {setCookie} from "./tools.js";
+
 export function addEventListenerToReactionCanvas(reaction_section_canvas,
                                           reaction_h1_canvasTitle,
                                           reaction_h2_canvasSubTitle,
@@ -24,6 +26,7 @@ export function addEventListenerToReactionCanvas(reaction_section_canvas,
             reactionTimeList.push(resultTime);
             if (count === 2) {
                 reaction_section_canvas.removeEventListener("mousedown", reactionListener)
+                setCookieInFinish(reactionTimeList);
                 changeStyleToFinish(reactionTimeList);
             } else {
                 count += 1;
@@ -32,6 +35,9 @@ export function addEventListenerToReactionCanvas(reaction_section_canvas,
             }
         }
         event.preventDefault();
+    }
+    function setCookieInFinish(reactionTimeList){
+        setCookie("reactionResult", Math.round(reactionTimeList.reduce((sum, current) => sum + current, 0) / reactionTimeList.length));
     }
     function changeStyleToFinish(reactionTimeList){
         reaction_section_canvas.style.backgroundColor = "#2b87d1";

@@ -1,4 +1,10 @@
-import {clickedAndTimeToString, microTimeToSecondString, redirectToDashboard, redirectToCps} from "./tools.js";
+import {
+    clickedAndTimeToString,
+    microTimeToSecondString,
+    redirectToDashboard,
+    redirectToCps,
+    setCookie
+} from "./tools.js";
 export class CpsCore {
     constructor(CpsCanvas, CpsBackend) {
         this.canvas = CpsCanvas;
@@ -26,6 +32,7 @@ export class CpsCore {
             if (self.backend.getTime() >= 5){
                 clearInterval(self.timerID);
                 self.canvas.section.removeEventListener("mousedown", self.listener);
+                self.backend.setCookieInFinish(self.backend.getClicked());
                 self.canvas.drawEndGameCSS(self.backend.getClicked(), self.backend.getTime());
             }
         }, 100)
@@ -84,5 +91,8 @@ export class CpsBackend {
     }
     getTime() {
         return this.time;
+    }
+    setCookieInFinish(cpsResult){
+        setCookie("cpsResult", cpsResult);
     }
 }

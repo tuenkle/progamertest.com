@@ -18,6 +18,9 @@ export class AimCore {
         this.canvas.drawAccuracy(this.backend.getHit(), this.backend.getShot());
         this.listener = this.listener.bind(this)
         this.canvas.canvas.addEventListener("mousedown", this.listener);
+        this.canvas.canvas.addEventListener("contextmenu", function(event){
+            event.preventDefault();
+        })
         this.timer();
         this.drawer();
     }
@@ -132,8 +135,8 @@ export class AimCore {
             }, 500);
         } else {
             this.backend.minusLife();
-            this.canvas.canvas.removeEventListener("mousedown", this.listener);
             if (this.backend.getLife() === 0){
+                this.canvas.canvas.removeEventListener("mousedown", this.listener);
                 clearTimeout(this.drawingRepeatTimoutId);
                 clearInterval(this.timerID
 
@@ -190,7 +193,7 @@ export class AimCanvas {
         this.title.style.display = "none";
         this.subtitle.style.display = "none";
         this.section.style.cursor = "default";
-        this.canvas.style.cursor = "crosshair";
+        // this.canvas.style.cursor = "crosshair"; weird in windows
     }
     drawEndGameCSS(time, hit, shot) {
         this.canvas.style.display = "none";
@@ -246,7 +249,7 @@ export class AimCanvas {
         this.ctx.beginPath();
         this.ctx.fillStyle = "green";
         this.ctx.strokeStyle = "green";
-        this.ctx.arc(x, y, 1, 0, Math.PI * 2);
+        this.ctx.arc(x, y, 3, 0, Math.PI * 2);
         this.ctx.fill();
         this.ctx.stroke();
         this.ctx.closePath();
@@ -255,7 +258,7 @@ export class AimCanvas {
         this.ctx.beginPath();
         this.ctx.fillStyle = "red";
         this.ctx.strokeStyle = "red";
-        this.ctx.arc(x, y, 1, 0, Math.PI * 2);
+        this.ctx.arc(x, y, 3, 0, Math.PI * 2);
         this.ctx.fill();
         this.ctx.stroke();
         this.ctx.closePath();
@@ -270,7 +273,7 @@ export class AimCanvas {
     eraseShot(x, y) {
         this.ctx.beginPath();
         this.ctx.fillStyle = "grey";
-        this.ctx.arc(x, y, 2, 0, Math.PI * 2);
+        this.ctx.arc(x, y, 4, 0, Math.PI * 2);
         this.ctx.fill();
         this.ctx.closePath();
     }

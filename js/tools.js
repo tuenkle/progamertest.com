@@ -116,11 +116,11 @@ export function deleteCookie(name) {
     })
 }
 export function reactionResultToPercentage(reactionResult){
-
-}
-export function cpsResultToPercentage(cpsResult){
-
+    return 1
 }
 export function aimResultToPercentage(aimResult){
-
+    return 2
+}
+export function cpsResultToPercentage(cpsResult){
+    return 3
 }

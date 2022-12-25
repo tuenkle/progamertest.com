@@ -6,6 +6,7 @@
   <title>progamertest.com</title>
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/dashboard.css">
   <!--font-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,10 +22,62 @@
     dashboard
   </a>
 </header>
-<section id="index_section_canvas">
-  <h1 id="index_h1_canvasTitle">
-    Dashboard
-  </h1>
+<section id="dashboard_section_table">
+  <table id="dashboard_table_table">
+    <thead>
+    <tr>
+      <th scope="col">테스트</th>
+      <th scope="col">점수</th>
+      <th scope="col">상위</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+      <td>
+        반응속도
+      </td>
+      <td id="dashboard_td_reactionResult">
+        ?ms
+      </td>
+      <td id="dashboard_td_reactionPercentile">
+        ?%
+      </td>
+    </tr>
+    <tr>
+      <td>
+        에임
+      </td>
+      <td id="dashboard_td_aimResult">
+        ?초
+      </td>
+      <td id="dashboard_td_aimPercentile">
+        ?%
+      </td>
+    </tr>
+    <tr>
+      <td>
+        CPS
+      </td>
+      <td id="dashboard_td_cpsResult">
+        ?CPS
+      </td>
+      <td id="dashboard_td_cpsPercentile">
+        ?%
+      </td>
+    </tr>
+    <tr>
+      <td>
+        종합
+      </td>
+      <td>
+        -
+      </td>
+      <td id="dashboard_td_overallPercentile">
+        ?%
+      </td>
+    </tr>
+    </tbody>
+  </table>
 </section>
 <section id="general_section_catalog">
   <a id="general_a_reactionBox">
@@ -57,6 +110,8 @@
 <script type="module" src="js/index.js">
 </script>
 <script type="module" src="js/tools.js">
+</script>
+<script type="module" src="js/dashboard.js">
 </script>
 </body>
 </html>

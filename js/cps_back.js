@@ -4,7 +4,7 @@ import {
     redirectToDashboard,
     redirectToCps,
     setCookie
-} from "./tools.js";
+} from "./utils.js";
 export class CpsCore {
     constructor(CpsCanvas, CpsBackend) {
         this.canvas = CpsCanvas;

@@ -1,4 +1,4 @@
-import {redirectToIndex, redirectToReaction, redirectToAim, redirectToCps, redirectToDashboard} from "./tools.js";
+import {redirectToIndex, redirectToReaction, redirectToAim, redirectToCps, redirectToDashboard} from "./utils.js";
 
 const general_a_title = document.getElementById("general_a_title");
 const general_a_reactionBox = document.getElementById("general_a_reactionBox");

@@ -116,11 +116,26 @@ export function deleteCookie(name) {
     })
 }
 export function reactionResultToPercentage(reactionResult){
-    return 1
+    if (reactionResult <= 100) {
+        return 0.1
+    } else if (reactionResult <= 145) {
+        return roundUpToFirst(1 - ((145 - reactionResult) / 50))// 150 = 1-0, 100 = 1 - 1 110 = 1-0.8=0.2
+    } else if (reactionResult <= 150) {
+        return 1
+    } else if (reactionResult <= 250) {
+        return roundUpToFirst(1 + 49 * (reactionResult - 150) / 100)
+    } else if (reactionResult <= 400) {
+        return roundUpToFirst(50 + 49 * (reactionResult - 250) / 150)
+    } else {
+        return 99
+    }
 }
 export function aimResultToPercentage(aimResult){
     return 2
 }
 export function cpsResultToPercentage(cpsResult){
     return 3
+}
+export function roundUpToFirst(number) {
+    return Math.round(number * 10) / 10
 }

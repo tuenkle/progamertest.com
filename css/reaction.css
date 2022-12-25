@@ -37,7 +37,7 @@
     border: none;
     border-radius: 4px;
     width: 10rem;
-    background-color: darkorange;
+    background-color: orange;
     display: none;
 }
 #reaction_button_canvasButtonRetry:hover {
@@ -51,7 +51,7 @@
     border: none;
     border-radius: 4px;
     width: 10rem;
-    background-color: limegreen;
+    background-color: lightgreen;
     display: none;
 }
 #reaction_button_canvasButtonNext:hover {

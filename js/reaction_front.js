@@ -1,4 +1,4 @@
-import {redirectToAim, redirectToReaction} from "./tools.js";
+import {redirectToAim, redirectToReaction} from "./utils.js";
 import {addEventListenerToReactionCanvas} from "./reaction_back.js";
 
 const reaction_section_canvas = document.getElementById("reaction_section_canvas");

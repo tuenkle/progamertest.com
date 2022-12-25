@@ -1,4 +1,4 @@
-import {aimResultToPercentage, cpsResultToPercentage, getCookie, reactionResultToPercentage} from "./tools.js";
+import {aimResultToPercentage, cpsResultToPercentage, getCookie, reactionResultToPercentage} from "./utils.js";
 
 const dashboard_td_reactionResult = document.getElementById("dashboard_td_reactionResult");
 const dashboard_td_reactionPercentile = document.getElementById("dashboard_td_reactionPercentile");

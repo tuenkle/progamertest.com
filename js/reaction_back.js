@@ -1,4 +1,4 @@
-import {setCookie} from "./tools.js";
+import {reactionResultToPercentage, setCookie} from "./utils.js";
 
 export function addEventListenerToReactionCanvas(reaction_section_canvas,
                                           reaction_h1_canvasTitle,
@@ -43,7 +43,7 @@ export function addEventListenerToReactionCanvas(reaction_section_canvas,
         reaction_section_canvas.style.backgroundColor = "#2b87d1";
         reaction_h1_canvasTitle.style.visibility = "visible";
         reaction_h1_canvasTitle.textContent = Math.round(reactionTimeList.reduce((sum, current) => sum + current, 0) / reactionTimeList.length) + "ms";
-        reaction_h2_canvasSubTitle.textContent = "상위 N%";
+        reaction_h2_canvasSubTitle.textContent = `상위 ${reactionResultToPercentage(Math.round(reactionTimeList.reduce((sum, current) => sum + current, 0) / reactionTimeList.length))}%`;
         reaction_p_canvasParagraph.style.display = "none";
         reaction_section_canvas.style.cursor = "default";
         reaction_button_canvasButtonRetry.style.display = "inline-block";

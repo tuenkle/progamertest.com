@@ -4,7 +4,7 @@ import {
     hitandshotToString,
     redirectToAim,
     redirectToCps, setCookie
-} from "./tools.js";
+} from "./utils.js";
 
 export class AimCore {
     constructor(AimCanvas, AimBackend) {

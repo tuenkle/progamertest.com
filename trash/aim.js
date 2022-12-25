@@ -1,4 +1,4 @@
-import {getRandomInt, reduceDelay} from "../js/tools.js";
+import {getRandomInt, reduceDelay} from "../js/utils.js";
 
 const aim_section_canvas = document.getElementById("aim_section_canvas")
 const aim_h1_canvasTitle = document.getElementById("aim_h1_canvasTitle")

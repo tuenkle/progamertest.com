@@ -3,22 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="e2f85088-bf26-44f5-9167-f1238bfec781" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aim.html" beforeDir="false" afterPath="$PROJECT_DIR$/aim.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cps.html" beforeDir="false" afterPath="$PROJECT_DIR$/cps.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/reaction.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/reaction.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/dashboard.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/aim_back.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/aim_back.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/cps_back.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/cps_back.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/dashboard.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/dashboard.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/general.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/general.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/reaction_back.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/reaction_back.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/reaction_front.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/reaction_front.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/tools.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/utils.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reaction.html" beforeDir="false" afterPath="$PROJECT_DIR$/reaction.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/trash/aim.js" beforeDir="false" afterPath="$PROJECT_DIR$/trash/aim.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/trash/aim2.js" beforeDir="false" afterPath="$PROJECT_DIR$/trash/aim2.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/utils.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,16 +23,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/tuenkle/Desktop/Coding/progamertest/progamertest.com",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/tuenkle/Desktop/Coding/progamertest/progamertest.com&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -59,7 +45,8 @@
       <workItem from="1658833887120" duration="2322000" />
       <workItem from="1659078713582" duration="1428000" />
       <workItem from="1660877581107" duration="3826000" />
-      <workItem from="1671939826928" duration="4540000" />
+      <workItem from="1671939826928" duration="6255000" />
+      <workItem from="1672970493198" duration="837000" />
     </task>
     <servers />
   </component>

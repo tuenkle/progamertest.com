@@ -134,7 +134,17 @@ export function aimResultToPercentage(aimResult){
     return 2
 }
 export function cpsResultToPercentage(cpsResult){
-    return 3
+    if (cpsResult <= 2) {
+        return 99
+    } else if (cpsResult <= 6) {
+        return roundUpToFirst(99 - 49 * (cpsResult - 2) / 4)
+    } else if (cpsResult <= 10) {
+        return roundUpToFirst(50 - 49 * (cpsResult - 6) / 4)
+    } else if (cpsResult <= 12) {
+        return roundUpToFirst(1 - 0.9 * (cpsResult - 10) / 2)
+    } else {
+        return 0.1
+    }
 }
 export function roundUpToFirst(number) {
     return Math.round(number * 10) / 10

@@ -3,7 +3,7 @@ import {
     microTimeToSecondString,
     redirectToDashboard,
     redirectToCps,
-    setCookie
+    setCookie, roundUpToFirst
 } from "./utils.js";
 export class CpsCore {
     constructor(CpsCanvas, CpsBackend) {
@@ -32,7 +32,7 @@ export class CpsCore {
             if (self.backend.getTime() >= 5){
                 clearInterval(self.timerID);
                 self.canvas.section.removeEventListener("mousedown", self.listener);
-                self.backend.setCookieInFinish(self.backend.getClicked());
+                self.backend.setCookieInFinish(roundUpToFirst(self.backend.getClicked()/5));
                 self.canvas.drawEndGameCSS(self.backend.getClicked(), self.backend.getTime());
             }
         }, 100)

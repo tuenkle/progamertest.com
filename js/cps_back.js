@@ -3,7 +3,7 @@ import {
     microTimeToSecondString,
     redirectToDashboard,
     redirectToCps,
-    setCookie, roundUpToFirst
+    setCookie, roundUpToFirst, cpsResultToPercentage
 } from "./utils.js";
 export class CpsCore {
     constructor(CpsCanvas, CpsBackend) {
@@ -32,8 +32,9 @@ export class CpsCore {
             if (self.backend.getTime() >= 5){
                 clearInterval(self.timerID);
                 self.canvas.section.removeEventListener("mousedown", self.listener);
-                self.backend.setCookieInFinish(roundUpToFirst(self.backend.getClicked()/5));
-                self.canvas.drawEndGameCSS(self.backend.getClicked(), self.backend.getTime());
+                let cpsResult = roundUpToFirst(self.backend.getClicked()/self.backend.getTime())
+                self.backend.setCookieInFinish(cpsResult);
+                self.canvas.drawEndGameCSS(cpsResult);
             }
         }, 100)
     }
@@ -58,16 +59,16 @@ export class CpsCanvas {
     drawDefaultCSS() {
         this.paragraph.style.display = "none";
     }
-    drawEndGameCSS(clicked, time) {
+    drawEndGameCSS(cpsResult) {
         this.retry.style.display = "inline-block";
         this.next.style.display = "inline-block";
-        this.title.textContent = `${clickedAndTimeToString(clicked, time)}`;
-        this.subtitle.textContent = `상위 0%`;
+        this.title.textContent = cpsResult;
+        this.subtitle.textContent = `상위 ${cpsResultToPercentage(cpsResult)}%`;
         this.retry.onclick = redirectToCps;
         this.next.onclick = redirectToDashboard;
     }
     drawTime(time) {
-        this.subtitle.textContent = `${microTimeToSecondString(time)}/5:0`;
+        this.subtitle.textContent = `${microTimeToSecondString(time)}/05:00`;
     }
     drawCps(clicked, time) {
         this.title.textContent = `CPS: ${clickedAndTimeToString(clicked, time)}`;

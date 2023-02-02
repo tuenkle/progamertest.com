@@ -40,10 +40,10 @@ export function microTimeToSecondString(time) {
     time *= 10
     time = time.toFixed(1);
     if (time < 10) {
-        return `0.${time.substring(0, 1)}`
+        return `00:${time.substring(0, 1)}0`
 
     } else {
-        return `${time.substring(0, 1)}:${time.substring(1, 2)}`
+        return `0${time.substring(0, 1)}:${time.substring(1, 2)}0`
     }
     // if (time < 1) {
     //     return `0:${time.toFixed(0)}`

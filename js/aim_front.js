@@ -25,7 +25,7 @@ const canvas = new AimCanvas(
     aim_button_canvasButtonRetry,
     aim_button_canvasButtonNext,
     aim_p_canvasUnderTitle);
-const backend = new AimBackend(3, 20);
+const backend = new AimBackend(3, 20, 1000);
 const main = new AimCore(canvas, backend);
 
 aim_section_canvas.addEventListener("click", function() {

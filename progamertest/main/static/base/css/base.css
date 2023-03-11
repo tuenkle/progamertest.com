@@ -1,10 +1,11 @@
 html {
-    font: 300 100% 'Roboto', sans-serif;
+    font: 300 100% 'Pretendard Variable';
 }
 
 body {
     margin: 0;
     padding: 0;
+    background-color: #404040;
 }
 
 /*header*/
@@ -12,12 +13,13 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: aliceblue;
+    background-color: #404040;
 }
 #general_a_title {
     margin: 0 20rem 0 auto;
     padding: 1rem 0 1rem 0;
-    font: 400 1.5rem 'Roboto', sans-serif;
+    font: 400 1.5rem 'Pretendard Variable';
+
 }
 #general_a_dashboard {
     margin: 0 auto 0 20rem;
@@ -27,18 +29,19 @@ body {
 }
 
 #general_a_title:hover {
-    background-color: cornflowerblue;
+    font: 500 1.5rem 'Pretendard Variable';
     cursor: pointer;
 }
 
 #general_a_dashboard:hover {
-    background-color: cornflowerblue;
+    font: 400 1.5rem 'Pretendard Variable';
+
     cursor: pointer;
 }
 /*catalog*/
 #general_section_catalog {
     padding: 0 0 10rem 0;
-    background-color: aliceblue;
+    background-color: #404040;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -49,21 +52,21 @@ body {
     padding: 3rem;
     width: 13rem;
     height: 8rem;
-    background-color: white;
+    background-color: #B3B3B3;
 }
 #general_a_aimBox {
     margin: 4rem 1rem 0 1rem;
     padding: 3rem;
     width: 13rem;
     height: 8rem;
-    background-color: white;
+    background-color: #B3B3B3;
 }
 #general_a_cpsBox {
     margin: 4rem auto 0 1rem;
     padding: 3rem;
     width: 13rem;
     height: 8rem;
-    background-color: white;
+    background-color: #B3B3B3;
 }
 #general_a_reactionBox:hover {
     cursor: pointer;
@@ -78,13 +81,13 @@ body {
     background-color: cornflowerblue;
 }
 #general_h3_reactionBoxTitle {
-    font: 400 1.5rem 'Roboto', sans-serif;
+    font: 400 1.5rem 'Pretendard Variable', sans-serif;
 }
 #general_h3_aimBoxTitle {
-    font: 400 1.5rem 'Roboto', sans-serif;
+    font: 400 1.5rem 'Pretendard Variable', sans-serif;
 }
 #general_h3_cpsBoxTitle {
-    font: 400 1.5rem 'Roboto', sans-serif;
+    font: 400 1.5rem 'Pretendard Variable', sans-serif;
 }
 a:link {
 
@@ -123,17 +126,45 @@ a:active {
  text-decoration: none;
 
 }
-
+button.next {
+    margin: 5rem 0 5rem 2rem;
+    padding: 0.7rem 0;
+    font: 300 1.5rem 'Pretendard Variable';
+    border: none;
+    border-radius: 1rem;
+    width: 10rem;
+    background-color: #1DB954;
+    display: none;
+}
+button.next:hover {
+    cursor: pointer;
+    background-color:#FFFFFF;
+    transform: translateY(-0.25rem);
+}
+button.retry {
+    margin: 5rem 2rem 5rem 0;
+    padding: 0.7rem 0;
+    font: 300 1.5rem 'Pretendard Variable';
+    border: none;
+    border-radius: 1rem;
+    width: 10rem;
+    background-color: #B00020;
+    display: none;
+}
+button.retry:hover {
+    cursor: pointer;
+    background-color:#FFFFFF;
+    transform: translateY(-0.25rem);
+}
 /*under 70rem*/
 @media all and (max-width: 66rem) {
     #general_a_title {
         margin: 0 auto 0 3rem;
-        font: 400 1.5rem 'Roboto', sans-serif;
+        font: 400 1.5rem 'Pretendard Variable', sans-serif;
     }
     #general_a_dashboard {
         margin: 0 3rem 0 auto;
         text-align: right;
         font-size: 1.5rem;
     }
-
 }

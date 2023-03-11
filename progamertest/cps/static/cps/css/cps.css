@@ -1,6 +1,6 @@
 #cps_section_canvas {
     margin: 0;
-    background-color: #2b87d1;
+    background-color: #121212;
     text-align: center;
     height: 34rem;
 }
@@ -9,49 +9,19 @@
 }
 #cps_h1_canvasTitle {
     margin: 0;
-    font-size: 5rem;
-    font-weight: 400;
+    font: 400 5rem 'Pretendard Variable';
     color: white;
     padding-top: 10rem;
 }
 #cps_h2_canvasSubtitle{
     margin: 0;
-    font-weight: 300;
-    font-size: 2rem;
+    font: 300 2rem 'Pretendard Variable';
     color: white;
     padding-top: 5rem;
 }
 #cps_p_canvasParagraph{
     margin: 0;
-    font: 300 2rem 'Roboto', sans-serif;
+    font: 300 2rem 'Pretendard Variable';
     color: white;
     padding-top: 1rem;
-}
-#cps_button_canvasButtonRetry {
-    margin: 2rem 1rem 5rem 0;
-    padding: 0.7rem 0;
-    font-size: 1.5rem;
-    border: none;
-    border-radius: 4px;
-    width: 10rem;
-    background-color: darkorange;
-    display: none;
-}
-#cps_button_canvasButtonRetry:hover {
-    cursor: pointer;
-    background-color: white;
-}
-#cps_button_canvasButtonNext {
-    margin: 2rem 0 5rem 1rem;
-    padding: 0.7rem 0;
-    font-size: 1.5rem;
-    border: none;
-    border-radius: 4px;
-    width: 10rem;
-    background-color: limegreen;
-    display: none;
-}
-#cps_button_canvasButtonNext:hover {
-    cursor: pointer;
-    background-color: white;
 }

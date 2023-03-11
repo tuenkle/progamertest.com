@@ -53,11 +53,12 @@ export function addEventListenerToReactionCanvas(reaction_section_canvas,
     }
     function changeStyleToFinish(reactionTimeList){
         reaction_result = Math.round(reactionTimeList.reduce((sum, current) => sum + current, 0) / reactionTimeList.length);
-        reaction_section_canvas.style.backgroundColor = "#2b87d1";
+        reaction_section_canvas.style.backgroundColor = "#121212";
         reaction_h1_canvasTitle.style.visibility = "visible";
         reaction_h1_canvasTitle.textContent = reaction_result + "ms";
         // reaction_h2_canvasSubTitle.textContent = `상위 ${reactionResultToPercentage(reaction_result)}%`;
         reaction_p_canvasParagraph.style.display = "none";
+        reaction_h2_canvasSubTitle.style.display = "none";
         reaction_section_canvas.style.cursor = "default";
         reaction_button_canvasButtonRetry.style.display = "inline-block";
         reaction_button_canvasButtonNext.style.display = "inline-block";
@@ -85,14 +86,14 @@ export function addEventListenerToReactionCanvas(reaction_section_canvas,
         reaction_p_canvasParagraph.style.visibility = "hidden";
     }
     function changeStyleToReady(reactionTime){
-        reaction_section_canvas.style.backgroundColor = "#2b87d1";
+        reaction_section_canvas.style.backgroundColor = "#121212";
         reaction_h1_canvasTitle.style.visibility = "visible";
         reaction_h1_canvasTitle.textContent = reactionTime + "ms";
         reaction_h2_canvasSubTitle.textContent = "재개하려면 배경을 클릭하세요";
         reaction_p_canvasParagraph.style.visibility = "hidden";
     }
     function changeStyleToEarly(){
-        reaction_section_canvas.style.backgroundColor = "#2b87d1";
+        reaction_section_canvas.style.backgroundColor = "#121212";
         reaction_h1_canvasTitle.style.visibility = "hidden";
         reaction_h2_canvasSubTitle.textContent = "너무 빨리 클릭하셨습니다";
         reaction_p_canvasParagraph.style.visibility = "hidden";

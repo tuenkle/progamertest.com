@@ -5,8 +5,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e2f85088-bf26-44f5-9167-f1238bfec781" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/progamertest/aim/static/aim/css/aim.css" beforeDir="false" afterPath="$PROJECT_DIR$/progamertest/aim/static/aim/css/aim.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/progamertest/aim/static/aim/js/aim_back.js" beforeDir="false" afterPath="$PROJECT_DIR$/progamertest/aim/static/aim/js/aim_back.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/progamertest/aim/templates/aim/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/progamertest/aim/templates/aim/main.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/progamertest/cps/static/cps/css/cps.css" beforeDir="false" afterPath="$PROJECT_DIR$/progamertest/cps/static/cps/css/cps.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/progamertest/cps/static/cps/js/cps_back.js" beforeDir="false" afterPath="$PROJECT_DIR$/progamertest/cps/static/cps/js/cps_back.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/progamertest/cps/templates/cps/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/progamertest/cps/templates/cps/main.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/progamertest/cps/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/progamertest/cps/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/progamertest/dashboard/static/dashboard/css/dashboard.css" beforeDir="false" afterPath="$PROJECT_DIR$/progamertest/dashboard/static/dashboard/css/dashboard.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/progamertest/dashboard/templates/dashboard/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/progamertest/dashboard/templates/dashboard/main.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/progamertest/dashboard/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/progamertest/dashboard/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/progamertest/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/progamertest/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/progamertest/main/static/base/css/base.css" beforeDir="false" afterPath="$PROJECT_DIR$/progamertest/main/static/base/css/base.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/progamertest/main/static/main/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/progamertest/main/static/main/css/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/progamertest/main/static/main/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/progamertest/main/static/main/js/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/progamertest/main/templates/main/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/progamertest/main/templates/main/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/progamertest/reaction/static/reaction/css/reaction.css" beforeDir="false" afterPath="$PROJECT_DIR$/progamertest/reaction/static/reaction/css/reaction.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/progamertest/reaction/static/reaction/js/reaction_back.js" beforeDir="false" afterPath="$PROJECT_DIR$/progamertest/reaction/static/reaction/js/reaction_back.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/progamertest/reaction/templates/reaction/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/progamertest/reaction/templates/reaction/main.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/progamertest/reaction/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/progamertest/reaction/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/progamertest/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/progamertest/templates/base.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,7 +116,7 @@
       <workItem from="1678360647266" duration="25170000" />
       <workItem from="1678460401083" duration="13413000" />
       <workItem from="1678537669257" duration="5955000" />
-      <workItem from="1678543691110" duration="217000" />
+      <workItem from="1678543691110" duration="10280000" />
     </task>
     <servers />
   </component>

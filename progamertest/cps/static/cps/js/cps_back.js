@@ -87,7 +87,8 @@ export class CpsCanvas {
         this.cps_result = cpsResult
         this.retry.style.display = "inline-block";
         this.next.style.display = "inline-block";
-        this.title.textContent = cpsResult;
+        this.title.textContent = `CPS: ${cpsResult}`;
+        this.subtitle.style.display = "none";
         this.retry.onclick = this.cpsRetry.bind(this);
         this.next.onclick = this.cpsNext.bind(this);
     }

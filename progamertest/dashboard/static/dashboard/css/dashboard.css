@@ -1,27 +1,23 @@
 #dashboard_table_table{
-    margin:auto;
+    margin: 3rem auto 10rem auto;
     table-layout: fixed;
     width: 61rem;
-    font: 300 1.3rem 'Roboto', sans-serif;
-    background-color: white;
+    font: 300 1.3rem 'Pretendard Variable', sans-serif;
     text-align: center;
     height: 20rem;
 }
 #dashboard_section_table {
-    background-color: aliceblue;
+    background-color: #404040;
 }
 thead th:nth-child(1) {
     width: 5rem;
 }
-
 thead th:nth-child(2) {
     width: 5rem;
 }
-
 thead th:nth-child(3) {
     width: 5rem;
 }
-
 th, td {
     padding: 20px;
 }

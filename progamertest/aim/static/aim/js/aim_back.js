@@ -248,7 +248,7 @@ export class AimCanvas {
         this.paragraph2.style.display = "none";
         this.paragraph3.style.display = "none";
         this.title.style.display = "block";
-        this.subtitle.style.display = "block";
+        this.subtitle.style.display = "none";
         this.undertitle.style.display = "block";
         this.retry.style.display = "inline-block";
         this.next.style.display = "inline-block";

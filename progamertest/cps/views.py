@@ -29,5 +29,5 @@ def next(request):
             cps_result=cps_result
         )
         new_cps_result.save()
-        return redirect("cps:main")
+        return redirect("dashboard:main")
     raise Http404("Error")

@@ -6,6 +6,7 @@
     height: 34rem;
     cursor: pointer;
 }
+
 #aim_h1_canvasTitle {
     margin: 0;
     font-size: 5rem;
@@ -22,29 +23,29 @@
 }
 #aim_p_canvasParagraph{
     margin: 0;
-    font: 300 2rem 'Pretendard Variable', sans-serif;
+    font: 300 2rem 'Pretendard Variable';
     color: white;
     display: inline-block;
     padding: 1rem 0 0 0;
 }
 #aim_p_canvasParagraph2{
     margin: 0;
-    font: 300 2rem 'Pretendard Variable', sans-serif;
+    font: 300 1rem 'Pretendard Variable';
     color: white;
     display: inline-block;
-    padding: 1rem 3rem 0 0;
+    padding: 0.5rem 3rem 0 0;
 }
 #aim_p_canvasParagraph3{
     margin: 0;
-    font: 300 2rem 'Pretendard Variable', sans-serif;
+    font: 300 1rem 'Pretendard Variable';
     color: white;
     display: inline-block;
-    padding: 1rem 3rem 0 0;
+    padding: 0.5rem 3rem 0 0;
 }
 
 #aim_p_canvasUnderTitle {
     margin: 0;
-    font: 300 1.5rem 'Pretendard Variable', sans-serif;
+    font: 300 1.5rem 'Pretendard Variable';
     color: white;
     display: none;
 }

@@ -50,6 +50,8 @@ def main(request):
             cps_result = round(cps_result / 5, 1)
             cps_percentile = round(better_count / (worse_count + better_count) * 100, 1)
     average_percentile = "?"
+    if cps_percentile != "?" and aim_percentile != "?" and reaction_percentile != "?":
+        average_percentile = round((cps_percentile + aim_percentile + reaction_percentile) / 3, 1)
     return render(request, "dashboard/main.html", {"reaction_result": reaction_result,
                                                    "aim_result": aim_result,
                                                    "cps_result": cps_result,

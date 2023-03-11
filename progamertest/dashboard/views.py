@@ -28,7 +28,7 @@ def main(request):
             better_count = 0
             worse_count = 0
             for i in AimResult.objects.all():
-                if i.aim_result >= aim_result:
+                if i.aim_result <= aim_result:
                     worse_count += 1
                 else:
                     better_count += 1
@@ -43,7 +43,7 @@ def main(request):
             better_count = 0
             worse_count = 0
             for i in CpsResult.objects.all():
-                if i.cps_result >= cps_result:
+                if i.cps_result <= cps_result:
                     worse_count += 1
                 else:
                     better_count += 1

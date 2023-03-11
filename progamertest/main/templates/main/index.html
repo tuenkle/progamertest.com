@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% load static %}
+{% block css %}
+    <link rel="stylesheet" href={% static "main/css/index.css" %}>
+{% endblock %}
+{% block canvas %}
+<section id="index_section_canvas">
+    <h1 id="index_h1_canvasTitle">
+        progamertest
+    </h1>
+    <h2 id="index_h2_canvasSubtitle">
+        게임 컨트롤 능력을 측정해보세요
+    </h2>
+    <a href="{% url "reaction:main" %}" id="index_button_canvasButton">
+        시작
+    </a>
+</section>
+{% endblock %}
+{% block script %}
+    <script type="module" src={% static "main/js/index.js"%}>
+    </script>
+{% endblock %}

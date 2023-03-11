@@ -1,0 +1,68 @@
+{% extends "base.html" %}
+{% load static %}
+{% block css %}
+    <link rel="stylesheet" href={% static "dashboard/css/dashboard.css" %}>
+{% endblock %}
+{% block canvas %}
+<section id="dashboard_section_table">
+  <table id="dashboard_table_table">
+    <thead>
+    <tr>
+      <th scope="col">테스트</th>
+      <th scope="col">점수</th>
+      <th scope="col">상위</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+      <td>
+        반응속도
+      </td>
+      <td id="dashboard_td_reactionResult">
+        {{ reaction_result }}ms
+      </td>
+      <td id="dashboard_td_reactionPercentile">
+        ?%
+      </td>
+    </tr>
+    <tr>
+      <td>
+        에임
+      </td>
+      <td id="dashboard_td_aimResult">
+        {{ aim_result }}초
+      </td>
+      <td id="dashboard_td_aimPercentile">
+        ?%
+      </td>
+    </tr>
+    <tr>
+      <td>
+        CPS
+      </td>
+      <td id="dashboard_td_cpsResult">
+        {{ cps_result }}CPS
+      </td>
+      <td id="dashboard_td_cpsPercentile">
+        ?%
+      </td>
+    </tr>
+    <tr>
+      <td>
+        종합
+      </td>
+      <td>
+        -
+      </td>
+      <td id="dashboard_td_overallPercentile">
+        ?%
+      </td>
+    </tr>
+    </tbody>
+  </table>
+</section>
+{% endblock %}
+{% block script %}
+<script type="module" src={% static "dashboard/js/dashboard.js" %}>
+</script>
+{% endblock %}

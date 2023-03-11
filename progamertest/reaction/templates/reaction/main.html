@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% load static %}
+{% block css %}
+    <link rel="stylesheet" href={% static "reaction/css/reaction.css" %}>
+{% endblock %}
+{% block canvas %}
+    <section id="reaction_section_canvas">
+      <h1 id="reaction_h1_canvasTitle">
+        반응속도 테스트
+      </h1>
+      <p id="reaction_p_canvasUnderTitle">
+
+      </p>
+      <h2 id="reaction_h2_canvasSubtitle">
+        배경이 붉은색에서 초록색으로 변하면 최대한 빨리 클릭하세요
+      </h2>
+      <p id="reaction_p_canvasParagraph">
+        배경을 눌러 시작하세요
+      </p>
+      <button id="reaction_button_canvasButtonRetry">
+        재시도
+      </button>
+      <button id="reaction_button_canvasButtonNext">
+        다음 테스트
+      </button>
+    </section>
+{% endblock %}
+{% block form %}
+    <form id="reaction_form" method="post">
+        {% csrf_token %}
+        {{ form }}
+    </form>
+{% endblock %}
+{% block script %}
+    <script type="module" src={% static "reaction/js/reaction_front.js" %}>
+    </script>
+    <script type="module" src={% static "reaction/js/reaction_back.js" %}>
+    </script>
+{% endblock %}

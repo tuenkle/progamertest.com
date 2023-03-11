@@ -1,0 +1,139 @@
+html {
+    font: 300 100% 'Roboto', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/*header*/
+#general_header_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: aliceblue;
+}
+#general_a_title {
+    margin: 0 20rem 0 auto;
+    padding: 1rem 0 1rem 0;
+    font: 400 1.5rem 'Roboto', sans-serif;
+}
+#general_a_dashboard {
+    margin: 0 auto 0 20rem;
+    text-align: right;
+    padding: 1rem 0 1rem 0;
+    font-size: 1.5rem;
+}
+
+#general_a_title:hover {
+    background-color: cornflowerblue;
+    cursor: pointer;
+}
+
+#general_a_dashboard:hover {
+    background-color: cornflowerblue;
+    cursor: pointer;
+}
+/*catalog*/
+#general_section_catalog {
+    padding: 0 0 10rem 0;
+    background-color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+}
+#general_a_reactionBox {
+    margin: 4rem 1rem 0 auto;
+    padding: 3rem;
+    width: 13rem;
+    height: 8rem;
+    background-color: white;
+}
+#general_a_aimBox {
+    margin: 4rem 1rem 0 1rem;
+    padding: 3rem;
+    width: 13rem;
+    height: 8rem;
+    background-color: white;
+}
+#general_a_cpsBox {
+    margin: 4rem auto 0 1rem;
+    padding: 3rem;
+    width: 13rem;
+    height: 8rem;
+    background-color: white;
+}
+#general_a_reactionBox:hover {
+    cursor: pointer;
+    background-color: cornflowerblue;
+}
+#general_a_aimBox:hover {
+    cursor: pointer;
+    background-color: cornflowerblue;
+}
+#general_a_cpsBox:hover {
+    cursor: pointer;
+    background-color: cornflowerblue;
+}
+#general_h3_reactionBoxTitle {
+    font: 400 1.5rem 'Roboto', sans-serif;
+}
+#general_h3_aimBoxTitle {
+    font: 400 1.5rem 'Roboto', sans-serif;
+}
+#general_h3_cpsBoxTitle {
+    font: 400 1.5rem 'Roboto', sans-serif;
+}
+a:link {
+
+ color: black;
+
+ text-decoration: none;
+
+}
+
+
+
+a:visited {
+
+ color: black;
+
+ text-decoration: none;
+
+}
+
+
+
+a:hover {
+
+ color: black;
+
+ text-decoration: none;
+
+}
+
+
+
+a:active {
+
+ color: black;
+
+ text-decoration: none;
+
+}
+
+/*under 70rem*/
+@media all and (max-width: 66rem) {
+    #general_a_title {
+        margin: 0 auto 0 3rem;
+        font: 400 1.5rem 'Roboto', sans-serif;
+    }
+    #general_a_dashboard {
+        margin: 0 3rem 0 auto;
+        text-align: right;
+        font-size: 1.5rem;
+    }
+
+}

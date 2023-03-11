@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% load static %}
+{% block css %}
+    <link rel="stylesheet" href={% static "aim/css/aim.css" %}>
+{% endblock %}
+{% block canvas %}
+    <section id="aim_section_canvas">
+        <h1 id="aim_h1_canvasTitle">
+            에임 테스트
+        </h1>
+        <p id="aim_p_canvasUnderTitle">
+
+        </p>
+        <h2 id="aim_h2_canvasSubtitle">
+            화면에 나오는 원을 클릭하세요
+        </h2>
+        <p id="aim_p_canvasParagraph">
+            배경을 눌러 시작하세요
+        </p>
+        <button id="aim_button_canvasButtonRetry">
+            재시도
+        </button>
+        <button id="aim_button_canvasButtonNext">
+            다음 테스트
+        </button>
+    </section>
+{% endblock %}
+{% block form %}
+    <form id="aim_form" method="post">
+        {% csrf_token %}
+        {{ form }}
+    </form>
+{% endblock %}
+{% block script %}
+    <script type="module" src={% static "aim/js/aim_back.js"%}>
+    </script>
+    <script type="module" src={% static "aim/js/aim_front.js"%}>
+    </script>
+{% endblock %}

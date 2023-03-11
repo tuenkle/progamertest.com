@@ -1,15 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="e2f85088-bf26-44f5-9167-f1238bfec781" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/progamertest/aim/forms.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/progamertest/cps/forms.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/progamertest/cps/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/progamertest/dashboard/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/progamertest/main/static/base/js/base.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/progamertest.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/progamertest.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/aim_back.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/aim_back.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/aim_front.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/aim_front.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/404.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aim.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cps.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/aim.css" beforeDir="false" afterPath="$PROJECT_DIR$/progamertest/aim/static/aim/css/aim.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/cps.css" beforeDir="false" afterPath="$PROJECT_DIR$/progamertest/cps/static/cps/css/cps.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/dashboard.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/progamertest/main/static/main/css/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/progamertest/main/static/base/css/base.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/reaction.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/aim_back.js" beforeDir="false" afterPath="$PROJECT_DIR$/progamertest/aim/static/aim/js/aim_back.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/aim_front.js" beforeDir="false" afterPath="$PROJECT_DIR$/progamertest/aim/static/aim/js/aim_front.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/cps_back.js" beforeDir="false" afterPath="$PROJECT_DIR$/progamertest/cps/static/cps/js/cps_back.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/cps_front.js" beforeDir="false" afterPath="$PROJECT_DIR$/progamertest/cps/static/cps/js/cps_front.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/dashboard.js" beforeDir="false" afterPath="$PROJECT_DIR$/progamertest/dashboard/static/dashboard/js/dashboard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/general.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/reaction_back.js" beforeDir="false" afterPath="$PROJECT_DIR$/progamertest/reaction/static/reaction/js/reaction_back.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/reaction_front.js" beforeDir="false" afterPath="$PROJECT_DIR$/progamertest/reaction/static/reaction/js/reaction_front.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/progamertest/main/static/base/js/utils.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reaction.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/trash/aim.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/trash/aim2.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+        <option value="HTML File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -25,14 +64,46 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/tuenkle/Desktop/Coding/progamertest/progamertest.com&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/tuenkle/Desktop/Programming/progamertest.com&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.templateLanguages.PyTemplateLanguageModulesConfigurable&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\tuenkle\Desktop\Programming\progamertest.com\progamertest\dashboard\static\dashboard\js" />
+      <recent name="C:\Users\tuenkle\Desktop\Programming\progamertest.com\progamertest\dashboard\static\dashboard\css" />
+      <recent name="C:\Users\tuenkle\Desktop\Programming\progamertest.com\progamertest\dashboard\templates\dashboard" />
+      <recent name="C:\Users\tuenkle\Desktop\Programming\progamertest.com\progamertest\cps\static\cps\js" />
+      <recent name="C:\Users\tuenkle\Desktop\Programming\progamertest.com\progamertest\cps\static\cps\css" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\tuenkle\Desktop\Programming\progamertest.com\progamertest\main\static\base\js" />
+      <recent name="C:\Users\tuenkle\Desktop\Programming\progamertest.com\progamertest\main\static\base\css" />
+      <recent name="C:\Users\tuenkle\Desktop\Programming\progamertest.com\progamertest\main\static\main\js" />
+      <recent name="C:\Users\tuenkle\Desktop\Programming\progamertest.com\progamertest\main\static\main\css" />
+      <recent name="C:\Users\tuenkle\Desktop\Programming\progamertest.com\progamertest\main\static\base" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="reaction_front.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/progamertest/reaction/static/reaction/js/reaction_front.js" working-dir="$PROJECT_DIR$/progamertest/reaction/static/reaction/js">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Node.js.reaction_front.js" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -49,6 +120,12 @@
       <workItem from="1672970493198" duration="2294000" />
       <workItem from="1673860534328" duration="68000" />
       <workItem from="1675320347987" duration="5431000" />
+      <workItem from="1678349641635" duration="153000" />
+      <workItem from="1678349809671" duration="1000" />
+      <workItem from="1678350129696" duration="1370000" />
+      <workItem from="1678360647266" duration="25170000" />
+      <workItem from="1678460401083" duration="13413000" />
+      <workItem from="1678537669257" duration="5955000" />
     </task>
     <servers />
   </component>
@@ -65,5 +142,8 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/progamertest_com$views.coverage" NAME="views Coverage Results" MODIFIED="1678422113588" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/progamertest/reaction" />
   </component>
 </project>

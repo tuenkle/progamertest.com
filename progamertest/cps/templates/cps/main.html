@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% load static %}
+{% block css %}
+    <link rel="stylesheet" href={% static "cps/css/cps.css" %}
+{% endblock %}
+{% block canvas %}
+    <section id="cps_section_canvas">
+        <h1 id="cps_h1_canvasTitle">
+            CPS(Click Per Second) 테스트
+        </h1>
+        <h2 id="cps_h2_canvasSubtitle">
+            제한시간 내에 배경을 최대한 많이 클릭하세요
+        </h2>
+        <p id="cps_p_canvasParagraph">
+            배경을 눌러 시작하세요
+        </p>
+        <button id="cps_button_canvasButtonRetry">
+            재시도
+        </button>
+        <button id="cps_button_canvasButtonNext">
+            대시보드
+        </button>
+    </section>
+{% endblock %}
+{% block form %}
+    <form id="cps_form" method="post">
+        {% csrf_token %}
+        {{ form }}
+    </form>
+{% endblock %}
+{% block script %}
+    <script type="module" src={% static "cps/js/cps_back.js" %}>
+    </script>
+    <script type="module" src={% static "cps/js/cps_front.js" %}>
+    </script>
+{% endblock %}

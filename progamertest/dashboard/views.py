@@ -22,7 +22,6 @@ def main(request):
             print(better_count)
             reaction_percentile = round(better_count/(worse_count+better_count)*100, 1)
     aim_result = request.session.get("aim_result", "?")
-
     if not aim_result.isdigit():
         aim_percentile = "?"
     else:
@@ -34,25 +33,22 @@ def main(request):
                 worse_count += 1
             else:
                 better_count += 1
-        print(worse_count)
-        print(better_count)
         aim_percentile = round(better_count / (worse_count + better_count) * 100, 1)
-
-    cps_result = request.session.get("cps_result", "?")
-    if not cps_result.isdigit():
-        cps_percentile = "?"
-    else:
-        cps_result = float(cps_result)
-        better_count = 0
-        worse_count = 0
-        for i in CpsResult.objects.all():
-            if i.cps_result <= cps_result:
-                worse_count += 1
-            else:
-                better_count += 1
-        print(worse_count)
-        print(better_count)
-        cps_percentile = round(better_count / (worse_count + better_count) * 100, 1)
+    cps_result_list = request.session.get("cps_result")
+    cps_result = "?"
+    cps_percentile = "?"
+    if cps_result_list:
+        if type(cps_result_list[-1]) is int:
+            cps_result = cps_result_list[-1]
+            better_count = 0
+            worse_count = 0
+            for i in CpsResult.objects.all():
+                if i.cps_result >= cps_result:
+                    worse_count += 1
+                else:
+                    better_count += 1
+            cps_result = round(cps_result / 5, 1)
+            cps_percentile = round(better_count / (worse_count + better_count) * 100, 1)
     average_percentile = "?"
     return render(request, "dashboard/main.html", {"reaction_result": reaction_result,
                                                    "aim_result": aim_result,

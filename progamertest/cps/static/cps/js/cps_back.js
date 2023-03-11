@@ -46,7 +46,7 @@ export class CpsCore {
                 clearInterval(self.timerID);
                 self.canvas.section.removeEventListener("mousedown", self.listener);
                 let cpsResult = roundUpToFirst(self.backend.getClicked()/self.backend.getTime())
-                self.canvas.drawEndGameCSS(cpsResult);
+                self.canvas.drawEndGameCSS(cpsResult, self.backend.getClicked());
             }
         }, 100)
     }
@@ -83,8 +83,8 @@ export class CpsCanvas {
         form.action = "next/";
         form.submit();
     }
-    drawEndGameCSS(cpsResult) {
-        this.cps_result = cpsResult
+    drawEndGameCSS(cpsResult, cps_count) {
+        this.cps_result = cps_count
         this.retry.style.display = "inline-block";
         this.next.style.display = "inline-block";
         this.title.textContent = `CPS: ${cpsResult}`;

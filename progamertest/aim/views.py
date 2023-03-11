@@ -12,21 +12,28 @@ def main(request):
 def retry(request):
     if request.method == "POST":
         aim_result = request.POST["aim_result"]
-        request.session["aim_result"] = aim_result
-        new_aim_result = AimResult(
-            aim_result=aim_result
-        )
-        new_aim_result.save()
-        return redirect("aim:main")
-    raise Http404("Error")
-
+        if aim_result.isdecimal():
+            aim_result = int(aim_result)
+            if 100 < aim_result < 1000:
+                new_aim_result = AimResult(
+                    aim_result=aim_result
+                )
+                new_aim_result.save()
+    return redirect("aim:main")
 def next(request):
     if request.method == "POST":
         aim_result = request.POST["aim_result"]
-        request.session["aim_result"] = aim_result
-        new_aim_result = AimResult(
-            aim_result=aim_result
-        )
-        new_aim_result.save()
-        return redirect("cps:main")
-    raise Http404("Error")
+        if aim_result.isdecimal():
+            aim_result = int(aim_result)
+            if 0 < aim_result < 10000:
+                aim_result_list = request.session.get("aim_result")
+                if aim_result_list is None:
+                    aim_result_list = []
+                aim_result_list.append(aim_result)
+                request.session["aim_result"] = aim_result_list
+                if 100 < aim_result < 1000:
+                    new_aim_result = AimResult(
+                        aim_result=aim_result
+                    )
+                    new_aim_result.save()
+    return redirect("dashboard:main")

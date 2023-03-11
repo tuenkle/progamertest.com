@@ -5,7 +5,6 @@ from cps.models import CpsResult
 # Create your views here.
 def main(request):
     reaction_result_list = request.session.get("reaction_result")
-    print(reaction_result_list)
     reaction_result = "?"
     reaction_percentile = "?"
     if reaction_result_list:
@@ -18,22 +17,23 @@ def main(request):
                     worse_count += 1
                 else:
                     better_count += 1
-            print(worse_count)
-            print(better_count)
             reaction_percentile = round(better_count/(worse_count+better_count)*100, 1)
-    aim_result = request.session.get("aim_result", "?")
-    if not aim_result.isdigit():
-        aim_percentile = "?"
-    else:
-        aim_result = int(aim_result)
-        better_count = 0
-        worse_count = 0
-        for i in AimResult.objects.all():
-            if i.aim_result <= aim_result:
-                worse_count += 1
-            else:
-                better_count += 1
-        aim_percentile = round(better_count / (worse_count + better_count) * 100, 1)
+
+    aim_result_list = request.session.get("aim_result")
+    aim_result = "?"
+    aim_percentile = "?"
+    if aim_result_list:
+        if type(aim_result_list[-1]) is int:
+            aim_result = aim_result_list[-1]
+            better_count = 0
+            worse_count = 0
+            for i in AimResult.objects.all():
+                if i.aim_result >= aim_result:
+                    worse_count += 1
+                else:
+                    better_count += 1
+            aim_percentile = round(better_count/(worse_count+better_count)*100, 1)
+
     cps_result_list = request.session.get("cps_result")
     cps_result = "?"
     cps_percentile = "?"

@@ -5,37 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e2f85088-bf26-44f5-9167-f1238bfec781" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/progamertest/aim/forms.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/progamertest/cps/forms.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/progamertest/cps/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/progamertest/dashboard/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/progamertest/main/static/base/js/base.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/progamertest.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/progamertest.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/404.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aim.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cps.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/aim.css" beforeDir="false" afterPath="$PROJECT_DIR$/progamertest/aim/static/aim/css/aim.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/cps.css" beforeDir="false" afterPath="$PROJECT_DIR$/progamertest/cps/static/cps/css/cps.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/dashboard.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/progamertest/main/static/main/css/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/progamertest/main/static/base/css/base.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/reaction.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dashboard.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/aim_back.js" beforeDir="false" afterPath="$PROJECT_DIR$/progamertest/aim/static/aim/js/aim_back.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/aim_front.js" beforeDir="false" afterPath="$PROJECT_DIR$/progamertest/aim/static/aim/js/aim_front.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/cps_back.js" beforeDir="false" afterPath="$PROJECT_DIR$/progamertest/cps/static/cps/js/cps_back.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/cps_front.js" beforeDir="false" afterPath="$PROJECT_DIR$/progamertest/cps/static/cps/js/cps_front.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/dashboard.js" beforeDir="false" afterPath="$PROJECT_DIR$/progamertest/dashboard/static/dashboard/js/dashboard.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/general.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/reaction_back.js" beforeDir="false" afterPath="$PROJECT_DIR$/progamertest/reaction/static/reaction/js/reaction_back.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/reaction_front.js" beforeDir="false" afterPath="$PROJECT_DIR$/progamertest/reaction/static/reaction/js/reaction_front.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/progamertest/main/static/base/js/utils.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reaction.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/trash/aim.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/trash/aim2.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -126,6 +97,7 @@
       <workItem from="1678360647266" duration="25170000" />
       <workItem from="1678460401083" duration="13413000" />
       <workItem from="1678537669257" duration="5955000" />
+      <workItem from="1678543691110" duration="217000" />
     </task>
     <servers />
   </component>

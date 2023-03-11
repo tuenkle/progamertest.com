@@ -128,11 +128,11 @@ a:active {
 }
 button.next {
     margin: 5rem 0 5rem 2rem;
-    padding: 0.7rem 0;
-    font: 300 1.5rem 'Pretendard Variable';
+    padding: 0.5rem 0;
+    font: 300 1.3rem 'Pretendard Variable';
     border: none;
     border-radius: 1rem;
-    width: 10rem;
+    width: 7rem;
     background-color: #1DB954;
     display: none;
 }
@@ -143,11 +143,11 @@ button.next:hover {
 }
 button.retry {
     margin: 5rem 2rem 5rem 0;
-    padding: 0.7rem 0;
-    font: 300 1.5rem 'Pretendard Variable';
+    padding: 0.5rem 0;
+    font: 300 1.3rem 'Pretendard Variable';
     border: none;
     border-radius: 1rem;
-    width: 10rem;
+    width: 7rem;
     background-color: #B00020;
     display: none;
 }

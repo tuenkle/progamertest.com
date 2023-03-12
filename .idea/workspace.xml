@@ -6,11 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="e2f85088-bf26-44f5-9167-f1238bfec781" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/progamertest/aim/static/aim/css/aim.css" beforeDir="false" afterPath="$PROJECT_DIR$/progamertest/aim/static/aim/css/aim.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/progamertest/cps/static/cps/css/cps.css" beforeDir="false" afterPath="$PROJECT_DIR$/progamertest/cps/static/cps/css/cps.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/progamertest/main/static/base/css/base.css" beforeDir="false" afterPath="$PROJECT_DIR$/progamertest/main/static/base/css/base.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/progamertest/main/static/main/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/progamertest/main/static/main/css/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/progamertest/reaction/static/reaction/css/reaction.css" beforeDir="false" afterPath="$PROJECT_DIR$/progamertest/reaction/static/reaction/css/reaction.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/progamertest/dashboard/static/dashboard/css/dashboard.css" beforeDir="false" afterPath="$PROJECT_DIR$/progamertest/dashboard/static/dashboard/css/dashboard.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,7 +97,7 @@
       <workItem from="1678360647266" duration="25170000" />
       <workItem from="1678460401083" duration="13413000" />
       <workItem from="1678537669257" duration="5955000" />
-      <workItem from="1678543691110" duration="24024000" />
+      <workItem from="1678543691110" duration="25362000" />
     </task>
     <servers />
   </component>

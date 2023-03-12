@@ -48,6 +48,7 @@ export class AimCore {
         let self = this;
         this.timerID = setInterval(function() {
             self.backend.plusTime();
+            self.backend.reduceDelay();
             self.canvas.drawTime(self.backend.getTime());
         }, 1000)
     }
@@ -56,7 +57,6 @@ export class AimCore {
         this.drawingRepeatTimoutId = setTimeout(function drawingRepeat(){
             if (self.backend.getLife() > 0){
                 self.completeTarget();
-                self.backend.reduceDelay();
                 this.drawingRepeatTimoutId = setTimeout(drawingRepeat, self.backend.getDelay())
             }
         }, self.backend.getDelay())
@@ -71,7 +71,7 @@ export class AimCore {
             if (value.expired) {
                 continue
             }
-            if (Math.pow(value.x - clientX,2) + Math.pow(value.y - clientY, 2) <= Math.pow(this.backend.getRadius(), 2)){
+            if (Math.pow(value.x - clientX,2) + Math.pow(value.y - clientY, 2) <= (Math.pow(this.backend.getRadius(), 2))){
                 this.backend.setTargetHit(id);
                 this.backend.plusHit();
                 this.backend.setTargetExpired(id);
@@ -114,13 +114,14 @@ export class AimCore {
     completeTarget() {
         let [x, y, id] = this.makeTarget();
         this.canvas.drawTarget(x, y, this.backend.getRadius())
-        let diminishCount = 64
-        let diminishInterval = this.backend.getTargetLifeTime() / (diminishCount + 20)
+        let diminishCount = 128
+        let diminishInterval = this.backend.getTargetLifeTime() / (diminishCount + 10)
         let timeoutId = setTimeout(function run() {
             if (diminishCount > 0) {
                 diminishCount -= 1
                 this.backend.reduceRGB(id)
                 this.canvas.drawTargetWithRGB(x, y, this.backend.getRadius(), this.backend.getRGB(id))
+                this.canvas.drawBorder(x, y, this.backend.getRadius(), 360 - (diminishCount * 2.8125));
                 this.backend.getTarget(id).diminishTimeOutId = setTimeout(run.bind(this), diminishInterval);
             } else {
                 clearTimeout(timeoutId)
@@ -221,7 +222,7 @@ export class AimCanvas {
         this.canvas.outline = "solid"
         this.canvas.style.margin = "0.5rem auto 0 auto";
         this.canvas.style.backgroundColor = "rgb(128,128,128)";
-        this.canvas.style.border = "0.1rem solid black";
+        this.canvas.style.outline = "0.1rem solid #404040";
         this.canvas.style.display = "block";
         this.paragraph1.style.font = "300 1rem 'Pretendard Variable'";
         this.section.appendChild(this.paragraph2);
@@ -231,7 +232,6 @@ export class AimCanvas {
         this.title.style.display = "none";
         this.subtitle.style.display = "none";
         this.section.style.cursor = "default";
-        // this.canvas.style.cursor = "crosshair"; weird in windows
     }
     aimRetry(e) {
         let form = document.getElementById("aim_form")
@@ -272,35 +272,41 @@ export class AimCanvas {
     }
     drawTarget(x, y, radius) {
         this.ctx.beginPath();
-        this.ctx.arc(x, y, radius, 0, Math.PI * 2);
+        this.ctx.arc(x, y, radius - 1, 0, Math.PI * 2);
         this.ctx.fillStyle = "white";
+        this.ctx.strokeStyle = "white";
         this.ctx.fill();
-        this.ctx.closePath();
+        this.ctx.stroke();
+    }
+    drawBorder(x, y, radius, angle) {
+        this.ctx.beginPath();
+        this.ctx.strokeStyle = "#121212";
+        this.ctx.arc(x, y, radius, Math.PI * 1.5, Math.PI * 1.5 + Math.PI * angle / 180);
+        this.ctx.stroke();
     }
     drawTargetWithRGB(x, y, radius, rgb) {
         this.ctx.beginPath();
-        this.ctx.arc(x, y, radius, 0, Math.PI * 2);
-        this.ctx.fillStyle = `rgb(${rgb}, ${rgb}, ${rgb})`;
+        this.ctx.arc(x, y, radius - 1, 0, Math.PI * 2);
+        this.ctx.strokeStyle = `rgb(255, ${rgb}, ${rgb})`;
+        this.ctx.fillStyle = `rgb(255, ${rgb}, ${rgb})`;
         this.ctx.fill();
-        this.ctx.closePath();
+        this.ctx.stroke();
     }
-      drawMissedTarget(x, y, radius) {
+    drawMissedTarget(x, y, radius) {
         this.ctx.beginPath();
         this.ctx.fillStyle = "rgb(128,128,128)";
         this.ctx.strokeStyle = "#ce2637";
-        this.ctx.arc(x, y, radius, 0, Math.PI * 2);
+        this.ctx.arc(x, y, radius + 1, 0, Math.PI * 2);
         this.ctx.fill();
         this.ctx.stroke();
-        this.ctx.closePath();
     }
     drawHitTarget(x, y, radius) {
         this.ctx.beginPath();
-        this.ctx.fillStyle = "rgb(128,128,128)";
+        this.ctx.fillStyle = "rgb(100,100,100)";
         this.ctx.strokeStyle = "#4bdb6b";
-        this.ctx.arc(x, y, radius, 0, Math.PI * 2);
+        this.ctx.arc(x, y, radius + 1, 0, Math.PI * 2);
         this.ctx.fill();
         this.ctx.stroke();
-        this.ctx.closePath();
     }
     drawHitShot(x, y) {
         this.ctx.beginPath();
@@ -309,7 +315,7 @@ export class AimCanvas {
         this.ctx.arc(x, y, 1, 0, Math.PI * 2);
         this.ctx.fill();
         this.ctx.stroke();
-        this.ctx.closePath();
+        this.canvas.style.outline = "0.1rem solid #4bdb6b";
     }
     drawMissedShot(x, y) {
         this.ctx.beginPath();
@@ -318,21 +324,23 @@ export class AimCanvas {
         this.ctx.arc(x, y, 1, 0, Math.PI * 2);
         this.ctx.fill();
         this.ctx.stroke();
-        this.ctx.closePath();
+        this.canvas.style.outline = "0.1rem solid #ce2637";
+
     }
     eraseTarget(x, y, radius) {
         this.ctx.beginPath();
         this.ctx.fillStyle = "rgb(128,128,128)";
-        this.ctx.arc(x, y, radius + 1, 0, Math.PI * 2);
+        this.ctx.strokeStyle = "rgb(128,128,128)";
+
+        this.ctx.arc(x, y, radius + 2, 0, Math.PI * 2);
         this.ctx.fill();
-        this.ctx.closePath();
+        this.ctx.stroke();
     }
     eraseShot(x, y) {
         this.ctx.beginPath();
         this.ctx.fillStyle = "rgb(128,128,128)";
-        this.ctx.arc(x, y, 4, 0, Math.PI * 2);
+        this.ctx.arc(x, y, 2, 0, Math.PI * 2);
         this.ctx.fill();
-        this.ctx.closePath();
     }
 }
 
@@ -345,7 +353,7 @@ export class AimBackend {
         this.radius = defaultRadius;
         this.targets = {};
         this.lastid = 0;
-        this.delay = 1000;
+        this.delay = 900;
         this.targetLifeTime = defaultTargetLifetime
         this.diminishCount = 10
     }
@@ -361,7 +369,14 @@ export class AimBackend {
         }
     }
     reduceDelay() {
-        this.delay *= 0.99;
+        console.log(this.delay)
+        if (this.delay < 300) {
+            this.delay *= 0.995;
+        } else if (this.delay < 500){
+            this.delay *= 0.99;
+        } else {
+            this.delay *= 0.98;
+        }
     }
     getTargetLifeTime() {
         return this.targetLifeTime;
@@ -373,8 +388,7 @@ export class AimBackend {
         return this.targets[targetId];
     }
     reduceRGB(targetID) {
-        this.targets[targetID].rgb -= 2;
-
+        this.targets[targetID].rgb -= 1;
     }
     getRGB(targetID) {
         return this.targets[targetID].rgb;

@@ -14,7 +14,7 @@ def retry(request):
         aim_result = request.POST["aim_result"]
         if aim_result.isdecimal():
             aim_result = int(aim_result)
-            if 100 < aim_result < 1000:
+            if 1 < aim_result < 200:
                 new_aim_result = AimResult(
                     aim_result=aim_result
                 )
@@ -31,7 +31,7 @@ def next(request):
                     aim_result_list = []
                 aim_result_list.append(aim_result)
                 request.session["aim_result"] = aim_result_list
-                if 100 < aim_result < 1000:
+                if 1 < aim_result < 200:
                     new_aim_result = AimResult(
                         aim_result=aim_result
                     )

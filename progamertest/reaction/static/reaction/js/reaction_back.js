@@ -17,11 +17,11 @@ export function addEventListenerToReactionCanvas(reaction_section_canvas,
         if (condition === 0){
             changeStyleToProgress();
             condition = 1;
-            let randomTime = 500;
+            let randomTime = 1500 + Math.random() * 2000;
             reactionTimeout = setTimeout(temp, randomTime);
         } else if (condition === 1){
-            changeStyleToEarly();
             clearTimeout(reactionTimeout);
+            changeStyleToEarly();
             condition = 0;
         } else if (condition === 2){
             let resultTime = Date.now() - startTime;
@@ -55,7 +55,7 @@ export function addEventListenerToReactionCanvas(reaction_section_canvas,
         reaction_result = Math.round(reactionTimeList.reduce((sum, current) => sum + current, 0) / reactionTimeList.length);
         reaction_section_canvas.style.backgroundColor = "#121212";
         reaction_h1_canvasTitle.style.visibility = "visible";
-        reaction_h1_canvasTitle.textContent = reaction_result + "ms";
+        reaction_h1_canvasTitle.textContent = "평균: " + reaction_result + "ms";
         // reaction_h2_canvasSubTitle.textContent = `상위 ${reactionResultToPercentage(reaction_result)}%`;
         reaction_p_canvasParagraph.style.display = "none";
         reaction_h2_canvasSubTitle.style.display = "none";

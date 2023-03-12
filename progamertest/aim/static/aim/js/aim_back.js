@@ -120,7 +120,8 @@ export class AimCore {
             if (diminishCount > 0) {
                 diminishCount -= 1
                 this.backend.reduceRGB(id)
-                this.canvas.drawTargetWithRGB(x, y, this.backend.getRadius(), this.backend.getRGB(id))
+                this.canvas.eraseTarget(x, y, this.backend.getRadius());
+                this.canvas.drawTargetWithRGB(x, y, this.backend.getRadius(), this.backend.getRGB(id));
                 this.canvas.drawBorder(x, y, this.backend.getRadius(), 360 - (diminishCount * 2.8125));
                 this.backend.getTarget(id).diminishTimeOutId = setTimeout(run.bind(this), diminishInterval);
             } else {

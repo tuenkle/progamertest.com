@@ -1,0 +1,32 @@
+#dashboard_table_table{
+    margin: 3rem auto 10rem auto;
+    table-layout: fixed;
+    width: 61rem;
+    font: 300 1.3rem 'Pretendard Variable', sans-serif;
+    text-align: center;
+    height: 23rem;
+}
+#dashboard_section_table {
+    background-color: #404040;
+}
+thead th:nth-child(1) {
+    width: 5rem;
+}
+thead th:nth-child(2) {
+    width: 5rem;
+}
+thead th:nth-child(3) {
+    width: 5rem;
+}
+th, td {
+    padding: 20px;
+}
+thead {
+    background-color: grey;
+}
+tbody tr:nth-child(odd) {
+    background-color: lightgrey;
+}
+tbody tr:nth-child(even) {
+    background-color: grey;
+}

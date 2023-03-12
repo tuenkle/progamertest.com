@@ -5,8 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e2f85088-bf26-44f5-9167-f1238bfec781" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/progamertest/dashboard/static/dashboard/css/dashboard.css" beforeDir="false" afterPath="$PROJECT_DIR$/progamertest/dashboard/static/dashboard/css/dashboard.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/progamertest/progamertest/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/progamertest/progamertest/settings.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,11 +59,11 @@
       <recent name="C:\Users\tuenkle\Desktop\Programming\progamertest.com\progamertest\cps\static\cps\css" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\tuenkle\Desktop\Programming\progamertest.com\progamertest" />
       <recent name="C:\Users\tuenkle\Desktop\Programming\progamertest.com\progamertest\main\static\base\js" />
       <recent name="C:\Users\tuenkle\Desktop\Programming\progamertest.com\progamertest\main\static\base\css" />
       <recent name="C:\Users\tuenkle\Desktop\Programming\progamertest.com\progamertest\main\static\main\js" />
       <recent name="C:\Users\tuenkle\Desktop\Programming\progamertest.com\progamertest\main\static\main\css" />
-      <recent name="C:\Users\tuenkle\Desktop\Programming\progamertest.com\progamertest\main\static\base" />
     </key>
   </component>
   <component name="RunManager">
@@ -97,7 +98,7 @@
       <workItem from="1678360647266" duration="25170000" />
       <workItem from="1678460401083" duration="13413000" />
       <workItem from="1678537669257" duration="5955000" />
-      <workItem from="1678543691110" duration="25362000" />
+      <workItem from="1678543691110" duration="25794000" />
     </task>
     <servers />
   </component>

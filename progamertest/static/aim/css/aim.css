@@ -1,0 +1,51 @@
+#aim_section_canvas {
+    margin: 0;
+    background-color: #121212;
+    text-align: center;
+    /*align-content: center;*/
+    height: 36rem;
+    cursor: pointer;
+}
+
+#aim_h1_canvasTitle {
+    margin: 0;
+    font-size: 5rem;
+    font-weight: 400;
+    color: white;
+    padding-top: 10rem;
+}
+#aim_h2_canvasSubtitle{
+    margin: 0;
+    font-weight: 300;
+    font-size: 2rem;
+    color: white;
+    padding-top: 5rem;
+}
+#aim_p_canvasParagraph{
+    margin: 0;
+    font: 300 2rem 'Pretendard Variable';
+    color: white;
+    display: inline-block;
+    padding: 1rem 0 0 0;
+}
+#aim_p_canvasParagraph2{
+    margin: 0;
+    font: 300 1rem 'Pretendard Variable';
+    color: white;
+    display: inline-block;
+    padding: 0.5rem 3rem 0 0;
+}
+#aim_p_canvasParagraph3{
+    margin: 0;
+    font: 300 1rem 'Pretendard Variable';
+    color: white;
+    display: inline-block;
+    padding: 0.5rem 3rem 0 0;
+}
+
+#aim_p_canvasUnderTitle {
+    margin: 0;
+    font: 300 1.5rem 'Pretendard Variable';
+    color: white;
+    display: none;
+}

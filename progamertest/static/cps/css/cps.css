@@ -1,0 +1,27 @@
+#cps_section_canvas {
+    margin: 0;
+    background-color: #121212;
+    text-align: center;
+    height: 36rem;
+}
+#cps_section_canvas:hover {
+    cursor: pointer;
+}
+#cps_h1_canvasTitle {
+    margin: 0;
+    font: 400 5rem 'Pretendard Variable';
+    color: white;
+    padding-top: 10rem;
+}
+#cps_h2_canvasSubtitle{
+    margin: 0;
+    font: 300 2rem 'Pretendard Variable';
+    color: white;
+    padding-top: 5rem;
+}
+#cps_p_canvasParagraph{
+    margin: 0;
+    font: 300 2rem 'Pretendard Variable';
+    color: white;
+    padding-top: 1rem;
+}

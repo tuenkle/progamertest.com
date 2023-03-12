@@ -1,0 +1,32 @@
+#reaction_section_canvas {
+    margin: 0;
+    background-color: #121212;
+    text-align: center;
+    height: 36rem;
+}
+#reaction_section_canvas:hover {
+    cursor: pointer;
+}
+#reaction_h1_canvasTitle {
+    margin: 0;
+    font: 400 5rem 'Pretendard Variable';
+    color: white;
+    padding-top: 10rem;
+}
+#reaction_p_canvasUnderTitle {
+    margin: 0;
+    font: 300 1.5rem 'Pretendard Variable';
+    color: white;
+}
+#reaction_h2_canvasSubtitle{
+    margin: 0;
+    font: 300 2rem 'Pretendard Variable';
+    color: white;
+    padding-top: 5rem;
+}
+#reaction_p_canvasParagraph{
+    margin: 0;
+    font: 300 2rem 'Pretendard Variable';
+    color: white;
+    padding-top: 1rem;
+}
